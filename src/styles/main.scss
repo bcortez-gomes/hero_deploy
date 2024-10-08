@@ -1,0 +1,60 @@
+@use 'header';
+@use 'heroVideo';
+@use 'variaveis';
+@use 'footer';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Ember, sans-serif;
+    list-style: none;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: variaveis.$corPretoPadrao;
+}
+
+.container {
+    max-width: 100%;
+    padding: 0;
+}
+
+@font-face {
+    font-family: Ember;
+    src: url(../assets/fonts/AnyConv.com__AmazonEmber_Rg.woff2);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Ember;
+    src: url(../assets/fonts/AnyConv.com__Amazon-Ember-Medium.woff2);
+    font-weight: 550;
+}
+
+@font-face {
+    font-family: Ember;
+    src: url(../assets/fonts/AnyConv.com__AmazonEmber_Bd.woff2);
+    font-weight: 700;
+}
+
+@mixin text($fontSize: 25px){
+    font-size: $fontSize;
+    color: $textoEmBranco;
+}
+
+@mixin textBotao1($fontSize: 20px){
+    font-size: $fontSize;
+    color: $textoEmAzul;
+}
+
+@mixin textBotao2($fontSize: 30px){
+    font-size: $fontSize;
+    color: $textoEmAzul;
+}
+
+@mixin tituloCard1($fontSize: 35px){
+    font-size: $fontSize;
+    color: $textoEmBranco;
+}
